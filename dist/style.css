@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: box-border;
+}
+
+@font-face {
+  font-family: Dimitri;
+  src: url(https://cdn.glitch.com/405971ae-2b45-45f8-926d-a12f77aa313a%2FDIMIS___.TTF?1527265364661) format("truetype");
+}
+body {
+  background: #7d5bbe;
+  height: 100%;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  /* base font size */
+}
+
+.container {
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: #e6e6e6;
+  font-size: 5rem;
+  font-weight: 800;
+  text-shadow: 4px 4px 3px #38245b;
+}
+
+#twitch {
+  font-family: Dimitri;
+}
+
+li {
+  margin: 0px 5px;
+  padding: 2px 0px;
+  border-radius: 4px;
+  width: 90px;
+  color: #e6e6e6;
+  background-color: #38245b;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #b3b3b3;
+}
+
+li:hover {
+  color: gray;
+  background-color: #b3b3b3;
+}
+
+.channel {
+  border-bottom: 2px solid #e6e6e6;
+  padding: 10px 5px;
+}
+
+.icon img {
+  border: 2px solid #e6e6e6;
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #e6e6e6;
+}
+
+.offline {
+  background-color: gray;
+}
+
+.online {
+  background-color: #558000;
+}
+
+.smallFont {
+  font-size: 0.85rem;
+}
+
+footer {
+  margin-top: 7px;
+  font-size: 0.8rem;
+  text-align: right;
+  color: black;
+}
+footer a, footer a:visited {
+  font-size: 0.8rem;
+  color: black;
+}
+footer a:hover, footer a:active {
+  color: #e6e6e6;
+}
+
+/* reduce base font size to reduce all rem sizes */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
